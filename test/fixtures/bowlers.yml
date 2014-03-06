@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  overs: 1.5
+  wides: 1
+  noball: 1
+  fours: 1
+  sixes: 1
+  wkts: 1
+
+two:
+  name: MyString
+  overs: 1.5
+  wides: 1
+  noball: 1
+  fours: 1
+  sixes: 1
+  wkts: 1

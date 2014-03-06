@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  runs: 1
+  fours: 1
+  sixes: 1
+  is_out: false
+  wkt_by: MyString
+
+two:
+  name: MyString
+  runs: 1
+  fours: 1
+  sixes: 1
+  is_out: false
+  wkt_by: MyString

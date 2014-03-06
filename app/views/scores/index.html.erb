@@ -1,0 +1,29 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <td>S.No</td>
+        <td>Match</td>
+        <td>Team-1</td>
+        <td>Team-2</td>
+        <td>Venue</td>
+        <td>Score Card</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @scores.sort.each do |score| %>
+        <tr>
+          <td><%= score.id %></td>
+          <td><%= score.name %></td>
+          <td><%= Team.find(score.team1).name %></td>
+          <td><%= Team.find(score.team2).name %></td>
+          <td><%= score.venue %></td>
+          <td><%= link_to "Scorecard", score %></td>
+        </tr>  
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+
+

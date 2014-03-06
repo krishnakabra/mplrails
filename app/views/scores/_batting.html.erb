@@ -1,0 +1,73 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Runs</th>
+        <th>Balls</th>
+        <th>1's</th>
+        <th>2's</th>
+        <th>3's</th>
+        <th>Fours</th>
+        <th>Sixes</th>
+        <th>Status</th>
+        <th>Strike Rate</th>
+        <th>Bowler</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @battings1.reverse.each do |bat| %>
+        <tr>
+          <td><%= bat.name %></td>
+          <td><%= bat.runs %></td>
+          <td><%= bat.balls %></td>
+          <td><%= bat.ones %></td>
+          <td><%= bat.twos %></td>
+          <td><%= bat.threes %></td>
+          <td><%= bat.fours %></td>
+          <td><%= bat.sixes %></td>
+          <td>
+            <% if bat.status == true %>
+              Out
+            <% else %>
+              Bat
+            <% end %>
+          </td>
+          <td><%= bat.strikerate %></td>
+          <td><%= bat.bowler %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>  
+<hr>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Bowler</th>
+        <th>Runs</th>
+        <th>Overs</th>
+        <th>Wides</th>
+        <th>Noballs</th>
+        <th>Maidens</th>
+        <th>Wickets</th>
+        <th>Econ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @bowlings1.reverse.each do |bowl| %>
+        <tr>
+          <td><%= bowl.name %></td>
+          <td><%= bowl.runs %></td>
+          <td><%= bowl.overs %></td>
+          <td><%= bowl.wides %></td>
+          <td><%= bowl.noball %></td>
+          <td><%= bowl.maidens %></td>
+          <td><%= bowl.wkts %></td>
+          <td><%= bowl.avg %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>  

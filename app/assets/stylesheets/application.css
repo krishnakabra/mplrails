@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require bootstrap.min
+ *= require_tree .
+ */
+
+#container{
+  margin: 0 auto 25px auto;
+  background-color: #FFF;
+  padding: 20px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+
+#text-glow{
+
+   -webkit-stroke-width: 5.3px;
+
+   -webkit-stroke-color: #FFFFFF;
+
+   -webkit-fill-color: #FFFFFF;
+
+   text-shadow: 1px 0px 20px red;
+}
+
+#main_banner{
+	width: 65%;
+	float: left;
+
+}
+#side_banner{
+	width: 35%;
+	float: right;
+
+}
+
+#side_banner img{
+	width: 80%;
+	height: 100%;
+
+}
+
+
+/* SCroller */
+
+#scroller {
+    background-color: #00b6ff;
+    color: #ffffff;
+    font-size: 14px;
+    height: 28px !important;
+    line-height:28px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 1px;
+    font-family: Helvetica;  
+}
+.scrollingtext {
+    color: #ffffff;
+    white-space:nowrap;
+    position:absolute;
+    font-size: 14px;
+    font-style: oblique;
+}
+.scrollingtext a:link, .scrollingtext a:visited {
+    color: #ffffff;
+    font-size: 14px;
+}
+.scrollingtext a:visited {
+    text-decoration:none;
+}
+
+.review {
+    padding-right: 50px;
+}
+
+#static-text {
+    position: absolute;
+    padding: 0 10px;
+    background-color: #00b6ff;
+    z-index: 99999;
+    font-weight: bold;
+    font-family: times;
+}
+/*scroller end*/
+
+

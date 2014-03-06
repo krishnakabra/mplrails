@@ -1,0 +1,10 @@
+<ul  class="row">
+  <% @battings.each do |bat| %>
+    <li class="col-lg-4" id="profile">
+      <img src="/assets/player_profile.jpeg" class="col-lg-4">
+      <%= bat.name %><br>
+      <%= bat.runs %>(<%= pluralize(bat.balls,"ball") %>)<br>
+      <%= bat.team.name %>
+    </li>
+  <% end %>
+</ul>
